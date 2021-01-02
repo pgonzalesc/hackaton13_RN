@@ -28,5 +28,81 @@
             "title": "El Larguero",
             "description": "El programa deportivo de referencia"
         }
+    ],
+    "categories": [
+        {
+            "comedy":[
+                {
+                    "id": 1,
+                    "title": "Titulo 1"
+                },
+                {
+                    "id": 2,
+                    "title": "Titulo 2"
+                },
+                {
+                    "id": 3,
+                    "title": "Titulo 3"
+                },
+                {
+                    "id": 4,
+                    "title": "Titulo 4"
+                }
+            ],
+            "music":[
+                {
+                    "id": 1,
+                    "title": "Titulo 1"
+                },
+                {
+                    "id": 2,
+                    "title": "Titulo 2"
+                },
+                {
+                    "id": 3,
+                    "title": "Titulo 3"
+                },
+                {
+                    "id": 4,
+                    "title": "Titulo 4"
+                }
+            ],
+            "games":[
+                {
+                    "id": 1,
+                    "title": "Titulo 1"
+                },
+                {
+                    "id": 2,
+                    "title": "Titulo 2"
+                },
+                {
+                    "id": 3,
+                    "title": "Titulo 3"
+                },
+                {
+                    "id": 4,
+                    "title": "Titulo 4"
+                }
+            ],
+            "news":[
+                {
+                    "id": 1,
+                    "title": "Titulo 1"
+                },
+                {
+                    "id": 2,
+                    "title": "Titulo 2"
+                },
+                {
+                    "id": 3,
+                    "title": "Titulo 3"
+                },
+                {
+                    "id": 4,
+                    "title": "Titulo 4"
+                }
+            ]
+        }
     ]
 }

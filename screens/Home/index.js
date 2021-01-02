@@ -9,6 +9,7 @@ const {height, width} = Dimensions.get('window');
 
 const Home = ({navigation})=> {
     const [podcast, setPodcast] = useState([]);
+    const [categories, setCategories] = useState([]);
     const [error, setError] = useState('');
 
     useEffect(() => {
@@ -16,15 +17,31 @@ const Home = ({navigation})=> {
         .getPodcast()
         .then((data) => {
             if (data.errors) {
-                console.warn('get api order error', data);
+                //console.warn('get api error', data);
                 setError(data.errors);
             } else {
-                //console.log(data);
+                console.log('Podcast', data);
                 setPodcast(data);
             }
         })
         .catch((e) => {
-            console.warn('get api order catch', e);
+            //console.warn('get api order catch', e);
+            setError(e.errors);
+        });
+
+        Api.podcastApi
+        .getCategories()
+        .then((data) => {
+            if (data.errors) {
+                console.warn('get api error', data);
+                setError(data.errors);
+            } else {
+                console.log('Categories', data);
+                setCategories(data);
+            }
+        })
+        .catch((e) => {
+            //console.warn('get api order catch', e);
             setError(e.errors);
         });
     }, []);
@@ -32,7 +49,7 @@ const Home = ({navigation})=> {
     return (
         <View style={styles.container}>
             <Header/>
-            <Categories/>
+            <Categories data={categories}/>
             <View style={{flex: 1}}>
                 <Slider navigation={navigation} data={podcast}/>
             </View>
