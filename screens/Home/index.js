@@ -7,7 +7,7 @@ import Header from '../../src/components/Header';
 
 const {height, width} = Dimensions.get('window');
 
-const Home = ()=> {
+const Home = ({navigation})=> {
     const [podcast, setPodcast] = useState([]);
     const [error, setError] = useState('');
 
@@ -31,10 +31,10 @@ const Home = ()=> {
 
     return (
         <View style={styles.container}>
-                <Header/>
-                <Categories/>
+            <Header/>
+            <Categories/>
             <View style={{flex: 1}}>
-                <Slider data={podcast}/>
+                <Slider navigation={navigation} data={podcast}/>
             </View>
         </View>
     );

@@ -11,11 +11,11 @@ const styles = StyleSheet.create({
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 
-const Slider = ({data}) => {
+const Slider = ({navigation,data}) => {
     //console.log(data);
   const scrollX = new Animated.Value(0);
   const detail = (item) => {
-    //navigation.navigate('Detalle', item);
+    navigation.navigate('Podcast', item);
   };
 
   if (data && data.length) {
