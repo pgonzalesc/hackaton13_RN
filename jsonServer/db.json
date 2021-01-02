@@ -1,0 +1,32 @@
+{
+    "podcast": [
+        {
+            "id": 1,
+            "image": "https://recursosweb.prisaradio.com/fotos/original/010002742450.png",
+            "author": "Ángels Barceló",
+            "title": "Hoy por Hoy",
+            "description": "Actualidad y entretenimiento por las"
+        },
+        {
+            "id": 2,
+            "image": "https://recursosweb.prisaradio.com/fotos/original/010002782664.png",
+            "author": "Carles Francino",
+            "title": "La Ventana",
+            "description": "Información, opinión, cultura y humor"
+        },
+        {
+            "id": 3,
+            "image": "https://recursosweb.prisaradio.com/fotos/original/010002644737.png",
+            "author": "Pepa Bueno",
+            "title": "Hora 25",
+            "description": "El informativo nocturno de referencia en la radio"
+        },
+        {
+            "id": 4,
+            "image": "https://recursosweb.prisaradio.com/fotos/original/010002266642.png",
+            "author": "Manu Carreño",
+            "title": "El Larguero",
+            "description": "El programa deportivo de referencia"
+        }
+    ]
+}
